@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04AD200D20D15FCD00D34D18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD200C20D15FCD00D34D18 /* AppDelegate.swift */; };
+		04AD200F20D15FCD00D34D18 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 04AD200E20D15FCD00D34D18 /* GameScene.sks */; };
+		04AD201120D15FCD00D34D18 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 04AD201020D15FCD00D34D18 /* Actions.sks */; };
+		04AD201320D15FCD00D34D18 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD201220D15FCD00D34D18 /* GameScene.swift */; };
+		04AD201520D15FCD00D34D18 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD201420D15FCD00D34D18 /* GameViewController.swift */; };
+		04AD201820D15FCD00D34D18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AD201620D15FCD00D34D18 /* Main.storyboard */; };
+		04AD201A20D15FCE00D34D18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04AD201920D15FCE00D34D18 /* Assets.xcassets */; };
+		04AD201D20D15FCE00D34D18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AD201B20D15FCE00D34D18 /* LaunchScreen.storyboard */; };
+		04AD202820D15FCE00D34D18 /* SylphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD202720D15FCE00D34D18 /* SylphTests.swift */; };
+		04AD203320D15FCE00D34D18 /* SylphUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD203220D15FCE00D34D18 /* SylphUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04AD202420D15FCE00D34D18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04AD200120D15FCD00D34D18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04AD200820D15FCD00D34D18;
+			remoteInfo = Sylph;
+		};
+		04AD202F20D15FCE00D34D18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04AD200120D15FCD00D34D18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04AD200820D15FCD00D34D18;
+			remoteInfo = Sylph;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04AD200920D15FCD00D34D18 /* Sylph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sylph.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04AD200C20D15FCD00D34D18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04AD200E20D15FCD00D34D18 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		04AD201020D15FCD00D34D18 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		04AD201220D15FCD00D34D18 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		04AD201420D15FCD00D34D18 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		04AD201720D15FCD00D34D18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04AD201920D15FCE00D34D18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04AD201C20D15FCE00D34D18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04AD201E20D15FCE00D34D18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04AD202320D15FCE00D34D18 /* SylphTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SylphTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04AD202720D15FCE00D34D18 /* SylphTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SylphTests.swift; sourceTree = "<group>"; };
+		04AD202920D15FCE00D34D18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04AD202E20D15FCE00D34D18 /* SylphUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SylphUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04AD203220D15FCE00D34D18 /* SylphUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SylphUITests.swift; sourceTree = "<group>"; };
+		04AD203420D15FCE00D34D18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04AD200620D15FCD00D34D18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04AD202020D15FCE00D34D18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04AD202B20D15FCE00D34D18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04AD200020D15FCD00D34D18 = {
+			isa = PBXGroup;
+			children = (
+				04AD200B20D15FCD00D34D18 /* Sylph */,
+				04AD202620D15FCE00D34D18 /* SylphTests */,
+				04AD203120D15FCE00D34D18 /* SylphUITests */,
+				04AD200A20D15FCD00D34D18 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04AD200A20D15FCD00D34D18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04AD200920D15FCD00D34D18 /* Sylph.app */,
+				04AD202320D15FCE00D34D18 /* SylphTests.xctest */,
+				04AD202E20D15FCE00D34D18 /* SylphUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04AD200B20D15FCD00D34D18 /* Sylph */ = {
+			isa = PBXGroup;
+			children = (
+				04AD200C20D15FCD00D34D18 /* AppDelegate.swift */,
+				04AD200E20D15FCD00D34D18 /* GameScene.sks */,
+				04AD201020D15FCD00D34D18 /* Actions.sks */,
+				04AD201220D15FCD00D34D18 /* GameScene.swift */,
+				04AD201420D15FCD00D34D18 /* GameViewController.swift */,
+				04AD201620D15FCD00D34D18 /* Main.storyboard */,
+				04AD201920D15FCE00D34D18 /* Assets.xcassets */,
+				04AD201B20D15FCE00D34D18 /* LaunchScreen.storyboard */,
+				04AD201E20D15FCE00D34D18 /* Info.plist */,
+			);
+			path = Sylph;
+			sourceTree = "<group>";
+		};
+		04AD202620D15FCE00D34D18 /* SylphTests */ = {
+			isa = PBXGroup;
+			children = (
+				04AD202720D15FCE00D34D18 /* SylphTests.swift */,
+				04AD202920D15FCE00D34D18 /* Info.plist */,
+			);
+			path = SylphTests;
+			sourceTree = "<group>";
+		};
+		04AD203120D15FCE00D34D18 /* SylphUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04AD203220D15FCE00D34D18 /* SylphUITests.swift */,
+				04AD203420D15FCE00D34D18 /* Info.plist */,
+			);
+			path = SylphUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04AD200820D15FCD00D34D18 /* Sylph */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04AD203720D15FCE00D34D18 /* Build configuration list for PBXNativeTarget "Sylph" */;
+			buildPhases = (
+				04AD200520D15FCD00D34D18 /* Sources */,
+				04AD200620D15FCD00D34D18 /* Frameworks */,
+				04AD200720D15FCD00D34D18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sylph;
+			productName = Sylph;
+			productReference = 04AD200920D15FCD00D34D18 /* Sylph.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04AD202220D15FCE00D34D18 /* SylphTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04AD203A20D15FCE00D34D18 /* Build configuration list for PBXNativeTarget "SylphTests" */;
+			buildPhases = (
+				04AD201F20D15FCE00D34D18 /* Sources */,
+				04AD202020D15FCE00D34D18 /* Frameworks */,
+				04AD202120D15FCE00D34D18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04AD202520D15FCE00D34D18 /* PBXTargetDependency */,
+			);
+			name = SylphTests;
+			productName = SylphTests;
+			productReference = 04AD202320D15FCE00D34D18 /* SylphTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04AD202D20D15FCE00D34D18 /* SylphUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04AD203D20D15FCE00D34D18 /* Build configuration list for PBXNativeTarget "SylphUITests" */;
+			buildPhases = (
+				04AD202A20D15FCE00D34D18 /* Sources */,
+				04AD202B20D15FCE00D34D18 /* Frameworks */,
+				04AD202C20D15FCE00D34D18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04AD203020D15FCE00D34D18 /* PBXTargetDependency */,
+			);
+			name = SylphUITests;
+			productName = SylphUITests;
+			productReference = 04AD202E20D15FCE00D34D18 /* SylphUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04AD200120D15FCD00D34D18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Dropkick;
+				TargetAttributes = {
+					04AD200820D15FCD00D34D18 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					04AD202220D15FCE00D34D18 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 04AD200820D15FCD00D34D18;
+					};
+					04AD202D20D15FCE00D34D18 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 04AD200820D15FCD00D34D18;
+					};
+				};
+			};
+			buildConfigurationList = 04AD200420D15FCD00D34D18 /* Build configuration list for PBXProject "Sylph" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04AD200020D15FCD00D34D18;
+			productRefGroup = 04AD200A20D15FCD00D34D18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04AD200820D15FCD00D34D18 /* Sylph */,
+				04AD202220D15FCE00D34D18 /* SylphTests */,
+				04AD202D20D15FCE00D34D18 /* SylphUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04AD200720D15FCD00D34D18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04AD201820D15FCD00D34D18 /* Main.storyboard in Resources */,
+				04AD200F20D15FCD00D34D18 /* GameScene.sks in Resources */,
+				04AD201A20D15FCE00D34D18 /* Assets.xcassets in Resources */,
+				04AD201D20D15FCE00D34D18 /* LaunchScreen.storyboard in Resources */,
+				04AD201120D15FCD00D34D18 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04AD202120D15FCE00D34D18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04AD202C20D15FCE00D34D18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04AD200520D15FCD00D34D18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04AD201320D15FCD00D34D18 /* GameScene.swift in Sources */,
+				04AD201520D15FCD00D34D18 /* GameViewController.swift in Sources */,
+				04AD200D20D15FCD00D34D18 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04AD201F20D15FCE00D34D18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04AD202820D15FCE00D34D18 /* SylphTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04AD202A20D15FCE00D34D18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04AD203320D15FCE00D34D18 /* SylphUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04AD202520D15FCE00D34D18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04AD200820D15FCD00D34D18 /* Sylph */;
+			targetProxy = 04AD202420D15FCE00D34D18 /* PBXContainerItemProxy */;
+		};
+		04AD203020D15FCE00D34D18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04AD200820D15FCD00D34D18 /* Sylph */;
+			targetProxy = 04AD202F20D15FCE00D34D18 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04AD201620D15FCD00D34D18 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04AD201720D15FCD00D34D18 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04AD201B20D15FCE00D34D18 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04AD201C20D15FCE00D34D18 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04AD203520D15FCE00D34D18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04AD203620D15FCE00D34D18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04AD203820D15FCE00D34D18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VQGZ978Q6B;
+				INFOPLIST_FILE = Sylph/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Dropkick.Sylph;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04AD203920D15FCE00D34D18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VQGZ978Q6B;
+				INFOPLIST_FILE = Sylph/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Dropkick.Sylph;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04AD203B20D15FCE00D34D18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VQGZ978Q6B;
+				INFOPLIST_FILE = SylphTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Dropkick.SylphTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sylph.app/Sylph";
+			};
+			name = Debug;
+		};
+		04AD203C20D15FCE00D34D18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VQGZ978Q6B;
+				INFOPLIST_FILE = SylphTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Dropkick.SylphTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sylph.app/Sylph";
+			};
+			name = Release;
+		};
+		04AD203E20D15FCE00D34D18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VQGZ978Q6B;
+				INFOPLIST_FILE = SylphUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Dropkick.SylphUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Sylph;
+			};
+			name = Debug;
+		};
+		04AD203F20D15FCE00D34D18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VQGZ978Q6B;
+				INFOPLIST_FILE = SylphUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Dropkick.SylphUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Sylph;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04AD200420D15FCD00D34D18 /* Build configuration list for PBXProject "Sylph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04AD203520D15FCE00D34D18 /* Debug */,
+				04AD203620D15FCE00D34D18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04AD203720D15FCE00D34D18 /* Build configuration list for PBXNativeTarget "Sylph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04AD203820D15FCE00D34D18 /* Debug */,
+				04AD203920D15FCE00D34D18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04AD203A20D15FCE00D34D18 /* Build configuration list for PBXNativeTarget "SylphTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04AD203B20D15FCE00D34D18 /* Debug */,
+				04AD203C20D15FCE00D34D18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04AD203D20D15FCE00D34D18 /* Build configuration list for PBXNativeTarget "SylphUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04AD203E20D15FCE00D34D18 /* Debug */,
+				04AD203F20D15FCE00D34D18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04AD200120D15FCD00D34D18 /* Project object */;
+}
