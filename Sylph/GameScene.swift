@@ -15,7 +15,9 @@ class GameScene: SKScene {
     public static var difficultyToPlay: Int = 0
     public static var currentSong: Song?
     var foreground: SKNode!
+    var background: SKNode!
     var noteLayer: SKNode!
+    var fretboard: SKSpriteNode!
     var hit0: SKSpriteNode!
     var hit1: SKSpriteNode!
     var hit2: SKSpriteNode!
@@ -45,6 +47,19 @@ class GameScene: SKScene {
     var comboLabel: SKLabelNode!
     
     override func didMove(to view: SKView) {
+        background = childNode(withName: "Background")!
+        fretboard = background.childNode(withName: "Fretboard") as! SKSpriteNode
+        let sourcePositions: [float2] = [
+            float2(0, 1), float2(1, 1),
+            float2(0, 0), float2(1, 0)
+        ]
+        let destPositions: [float2] = [
+            float2(0.3, 1), float2(0.7, 1),
+            float2(0, 0), float2(1, 0)
+            ]
+        let warp = SKWarpGeometryGrid(columns: 1, rows: 1, sourcePositions: sourcePositions, destinationPositions: destPositions)
+        scene?.warpGeometry = warp
+        fretboard.warpGeometry = warp
         scene?.scaleMode = SKSceneScaleMode.aspectFit
         foreground = childNode(withName: "Foreground")!
         noteLayer = childNode(withName: "Notes")!
@@ -56,10 +71,26 @@ class GameScene: SKScene {
         hit2 = foreground.childNode(withName: "hit3") as! SKSpriteNode
         hit3 = foreground.childNode(withName: "hit4") as! SKSpriteNode
         hitButtons = [hit0, hit1, hit2, hit3]
+        let h0dst = [float2(1.13, 1), float2(1.58, 1),
+                     float2(0.04, 0), float2(1.02, 0)]
+        let h1dst = [float2(0.58, 1), float2(1.01, 1),
+                     float2(0, 0), float2(1, 0)]
+        let h2dst = [float2(0, 1), float2(0.45, 1),
+                     float2(0, 0), float2(1, 0)]
+        let h3dst = [float2(-0.53, 1), float2(-0.09, 1),
+                     float2(-0.02, 0), float2(0.96, 0)]
+        let h0geom = SKWarpGeometryGrid(columns: 1, rows: 1, sourcePositions: sourcePositions, destinationPositions: h0dst)
+        let h1geom = SKWarpGeometryGrid(columns: 1, rows: 1, sourcePositions: sourcePositions, destinationPositions: h1dst)
+        let h2geom = SKWarpGeometryGrid(columns: 1, rows: 1, sourcePositions: sourcePositions, destinationPositions: h2dst)
+        let h3geom = SKWarpGeometryGrid(columns: 1, rows: 1, sourcePositions: sourcePositions, destinationPositions: h3dst)
         hit0highlight = foreground.childNode(withName: "hit1highlight") as! SKSpriteNode
+        hit0highlight.warpGeometry = h0geom
         hit1highlight = foreground.childNode(withName: "hit2highlight") as! SKSpriteNode
+        hit1highlight.warpGeometry = h1geom
         hit2highlight = foreground.childNode(withName: "hit3highlight") as! SKSpriteNode
+        hit2highlight.warpGeometry = h2geom
         hit3highlight = foreground.childNode(withName: "hit4highlight") as! SKSpriteNode
+        hit3highlight.warpGeometry = h3geom
         hit0highlight.alpha = 0
         hit1highlight.alpha = 0
         hit2highlight.alpha = 0
@@ -91,12 +122,9 @@ class GameScene: SKScene {
             let touchPosition = touch.location(in: self)
             //Add any touches to respective button arrays
             for i in 0...3 {
-                let buttonFrame: CGRect = hitButtons[i].frame
-                //Create a new bounding box covering the screen height-wise
-                let hitBounds = CGRect(x: buttonFrame.minX, y: -2000,
-                                       width: buttonFrame.maxX - buttonFrame.minX,
-                                       height: 4000)
-                if (hitBounds.contains(touchPosition)) {
+                let buttonFrame = hitButtons[i].frame
+                let hitbox = CGRect(x: buttonFrame.minX, y: -2000, width: buttonFrame.maxX - buttonFrame.minX, height: 2000)
+                if (hitbox.contains(touchPosition)) {
                     activatedHitTouches[i].append(touch)
                     hitButtons[i].run(SKAction.scale(to: 1.2, duration: 0.03))
                     //Check if any notes got hit.
@@ -214,7 +242,19 @@ class GameScene: SKScene {
                 for note in onscreenNotes {
                     let secondsUntilHit = note.time - GameScene.currentSong!.currentTime
                     let percentageToHit = CGFloat(secondsUntilHit/approachRate)
-                    note.sprite!.position = CGPoint(x: note.hitCirclePosition.x, y: note.hitCirclePosition.y + screenSize.height * 2 * percentageToHit)
+                    var pos1 = fretboard.frame.width * 0.525 + fretboard.frame.minX
+                    if (note.hitCircleIndex == 1) {
+                        pos1 = fretboard.frame.width * 0.5 + fretboard.frame.minX
+                    } else if (note.hitCircleIndex == 2) {
+                        pos1 = fretboard.frame.width * 0.5 + fretboard.frame.minX
+                    } else if (note.hitCircleIndex == 3) {
+                        pos1 = fretboard.frame.width * 0.475 + fretboard.frame.minX
+                    }
+                    var pos2 = note.hitCirclePosition.x
+                    var xPos = pos1 * percentageToHit + pos2 * (1 - percentageToHit)
+                    //Scale should then go from 1.2 * .49 to 1.2.
+                    note.sprite!.position = CGPoint(x: xPos, y: note.hitCirclePosition.y + screenSize.height * 2 * percentageToHit)
+                    note.sprite!.setScale((0.25) * percentageToHit + 1.2 * (1 - percentageToHit))
                 }
                 
                 //Delete any offscreen notes

@@ -93,7 +93,7 @@
                                                         <constraint firstItem="dOM-4U-lTo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="c7b-iE-1ff" secondAttribute="leading" id="uJB-TN-spn"/>
                                                     </constraints>
                                                 </view>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Brain Power-bg" translatesAutoresizingMaskIntoConstraints="NO" id="zcv-Hb-Lsb">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zcv-Hb-Lsb">
                                                     <rect key="frame" x="0.0" y="0.0" width="128" height="98"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="128" id="gBk-9i-z7x"/>
@@ -485,7 +485,4 @@
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Brain Power-bg" width="640" height="480"/>
-    </resources>
 </document>
