@@ -17,6 +17,16 @@
 		04AD201D20D15FCE00D34D18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AD201B20D15FCE00D34D18 /* LaunchScreen.storyboard */; };
 		04AD202820D15FCE00D34D18 /* SylphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD202720D15FCE00D34D18 /* SylphTests.swift */; };
 		04AD203320D15FCE00D34D18 /* SylphUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD203220D15FCE00D34D18 /* SylphUITests.swift */; };
+		04AD204120D8001F00D34D18 /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD204020D8001F00D34D18 /* Difficulty.swift */; };
+		04AD204320D8020E00D34D18 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD204220D8020E00D34D18 /* Note.swift */; };
+		04AD204520D9846E00D34D18 /* BlackBoxConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD204420D9846E00D34D18 /* BlackBoxConverter.swift */; };
+		04AD204B20DADD5F00D34D18 /* NoteSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD204A20DADD5F00D34D18 /* NoteSprite.swift */; };
+		04AD205F20DC335800D34D18 /* SongSelectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD205E20DC335800D34D18 /* SongSelectController.swift */; };
+		04AD206120E17DF400D34D18 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD206020E17DF400D34D18 /* Song.swift */; };
+		04AD206420E18D5F00D34D18 /* Songs in Resources */ = {isa = PBXBuildFile; fileRef = 04AD206320E18D5E00D34D18 /* Songs */; };
+		04AD206720E2A48D00D34D18 /* soft-hitnormal.caf in Resources */ = {isa = PBXBuildFile; fileRef = 04AD206620E2A20E00D34D18 /* soft-hitnormal.caf */; };
+		04AD206820E2A48D00D34D18 /* soft-hitnormalh.caf in Resources */ = {isa = PBXBuildFile; fileRef = 04AD206520E2A20500D34D18 /* soft-hitnormalh.caf */; };
+		04AD206C20E2D0C400D34D18 /* AssetList.txt in Resources */ = {isa = PBXBuildFile; fileRef = 04AD206B20E2D0C400D34D18 /* AssetList.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +63,16 @@
 		04AD202E20D15FCE00D34D18 /* SylphUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SylphUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AD203220D15FCE00D34D18 /* SylphUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SylphUITests.swift; sourceTree = "<group>"; };
 		04AD203420D15FCE00D34D18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04AD204020D8001F00D34D18 /* Difficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
+		04AD204220D8020E00D34D18 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		04AD204420D9846E00D34D18 /* BlackBoxConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackBoxConverter.swift; sourceTree = "<group>"; };
+		04AD204A20DADD5F00D34D18 /* NoteSprite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteSprite.swift; sourceTree = "<group>"; };
+		04AD205E20DC335800D34D18 /* SongSelectController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongSelectController.swift; sourceTree = "<group>"; };
+		04AD206020E17DF400D34D18 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		04AD206320E18D5E00D34D18 /* Songs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Songs; path = Sylph/Songs; sourceTree = "<group>"; };
+		04AD206520E2A20500D34D18 /* soft-hitnormalh.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "soft-hitnormalh.caf"; sourceTree = "<group>"; };
+		04AD206620E2A20E00D34D18 /* soft-hitnormal.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "soft-hitnormal.caf"; sourceTree = "<group>"; };
+		04AD206B20E2D0C400D34D18 /* AssetList.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = AssetList.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +103,7 @@
 		04AD200020D15FCD00D34D18 = {
 			isa = PBXGroup;
 			children = (
+				04AD206320E18D5E00D34D18 /* Songs */,
 				04AD200B20D15FCD00D34D18 /* Sylph */,
 				04AD202620D15FCE00D34D18 /* SylphTests */,
 				04AD203120D15FCE00D34D18 /* SylphUITests */,
@@ -103,15 +124,25 @@
 		04AD200B20D15FCD00D34D18 /* Sylph */ = {
 			isa = PBXGroup;
 			children = (
-				04AD200C20D15FCD00D34D18 /* AppDelegate.swift */,
+				04AD206B20E2D0C400D34D18 /* AssetList.txt */,
+				04AD206220E186B800D34D18 /* Songs */,
+				04AD201620D15FCD00D34D18 /* Main.storyboard */,
+				04AD205E20DC335800D34D18 /* SongSelectController.swift */,
+				04AD204420D9846E00D34D18 /* BlackBoxConverter.swift */,
 				04AD200E20D15FCD00D34D18 /* GameScene.sks */,
-				04AD201020D15FCD00D34D18 /* Actions.sks */,
 				04AD201220D15FCD00D34D18 /* GameScene.swift */,
 				04AD201420D15FCD00D34D18 /* GameViewController.swift */,
-				04AD201620D15FCD00D34D18 /* Main.storyboard */,
+				04AD206020E17DF400D34D18 /* Song.swift */,
+				04AD204020D8001F00D34D18 /* Difficulty.swift */,
+				04AD204220D8020E00D34D18 /* Note.swift */,
+				04AD204A20DADD5F00D34D18 /* NoteSprite.swift */,
+				04AD201020D15FCD00D34D18 /* Actions.sks */,
+				04AD200C20D15FCD00D34D18 /* AppDelegate.swift */,
 				04AD201920D15FCE00D34D18 /* Assets.xcassets */,
 				04AD201B20D15FCE00D34D18 /* LaunchScreen.storyboard */,
 				04AD201E20D15FCE00D34D18 /* Info.plist */,
+				04AD206620E2A20E00D34D18 /* soft-hitnormal.caf */,
+				04AD206520E2A20500D34D18 /* soft-hitnormalh.caf */,
 			);
 			path = Sylph;
 			sourceTree = "<group>";
@@ -132,6 +163,13 @@
 				04AD203420D15FCE00D34D18 /* Info.plist */,
 			);
 			path = SylphUITests;
+			sourceTree = "<group>";
+		};
+		04AD206220E186B800D34D18 /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Songs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,7 +276,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04AD206720E2A48D00D34D18 /* soft-hitnormal.caf in Resources */,
+				04AD206820E2A48D00D34D18 /* soft-hitnormalh.caf in Resources */,
+				04AD206420E18D5F00D34D18 /* Songs in Resources */,
 				04AD201820D15FCD00D34D18 /* Main.storyboard in Resources */,
+				04AD206C20E2D0C400D34D18 /* AssetList.txt in Resources */,
 				04AD200F20D15FCD00D34D18 /* GameScene.sks in Resources */,
 				04AD201A20D15FCE00D34D18 /* Assets.xcassets in Resources */,
 				04AD201D20D15FCE00D34D18 /* LaunchScreen.storyboard in Resources */,
@@ -267,7 +309,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04AD206120E17DF400D34D18 /* Song.swift in Sources */,
+				04AD204320D8020E00D34D18 /* Note.swift in Sources */,
+				04AD204120D8001F00D34D18 /* Difficulty.swift in Sources */,
+				04AD204520D9846E00D34D18 /* BlackBoxConverter.swift in Sources */,
+				04AD204B20DADD5F00D34D18 /* NoteSprite.swift in Sources */,
 				04AD201320D15FCD00D34D18 /* GameScene.swift in Sources */,
+				04AD205F20DC335800D34D18 /* SongSelectController.swift in Sources */,
 				04AD201520D15FCD00D34D18 /* GameViewController.swift in Sources */,
 				04AD200D20D15FCD00D34D18 /* AppDelegate.swift in Sources */,
 			);
@@ -445,6 +493,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VQGZ978Q6B;
 				INFOPLIST_FILE = Sylph/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -463,6 +512,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VQGZ978Q6B;
 				INFOPLIST_FILE = Sylph/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

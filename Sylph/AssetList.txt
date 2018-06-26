@@ -1,0 +1,21 @@
+So, this app probably needs new versions of anything in the Assets folder, plus new buttons on the main menu for the difficulty selection and some screens. The UI and gameplay inspiration I'm using is mostly StepMania, with a dose of Guitar Hero and games like Osu!Mania and Voez/Deemo, so if you need inspiration on that part those might be good resources. I was thinking also that it might be neat to have different colors for each note row on the background and hit circle/note type - the background bit of this would work with existing code but I'd have to change things around a bit to have different colored notes come down based on row. Still, I think it'd be cool. If you decide to go for a theme/style that supports that, go for it.
+
+Name of the app isn't locked in, go with the dev name or whatever you can come up with. Names aren't my thing.
+
+Feel free to go crazy customizing things - we don't have to have things like circular hit circles or notes, I can change backgrounds or whatever - anything goes. If you feel like anything could be added - extra effects, stuff like that, I think that'd be pretty neat to implement.
+
+Screens/buttons we need in addition to the assets folder stuff and difficulty select buttons:
+    -Launch screen
+    -Title screen
+    -Start button
+
+Some notes as to what stuff in the assets folder is (I didn't rename any of the dev assets I stole)
+hitcircleoverlay: This is the notes that appear on the screen.
+hitcircleselect: This is the hit circles.
+highlight: I created this highlight effect for when you hit a note. It lights up each bar.
+rhythmbck: The background/note row thing.
+The assets with capital letters: These are the grades that appear above your note. I made these, but they're placeholders. Feel free to rename the grades (please do, actually) and use cool fonts and stuff.
+
+You should be able to swap out these assets in real time by dragging new ones with the same names into the assets folder after deleting the old ones, so if you want to try stuff out that should work fine. Most of it is refereneced by name, not a link.
+
+
